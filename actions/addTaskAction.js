@@ -6,10 +6,10 @@ import {ref, set, push} from 'firebase/database'
 import {db} from '@/lib/firebase/firebaseInit'
 
 export async function addAction(prevState, formData) {
-	const todo = formData.get('task')
+	const task = formData.get('task')
 	const category = formData.get('category')
 	const newTask = {
-		todo,
+		task,
 		category,
 	}
 	const response = await addTask(newTask)

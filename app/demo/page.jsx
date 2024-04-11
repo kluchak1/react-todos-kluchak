@@ -7,7 +7,7 @@ import {getToDoItems} from '@/lib/firebase/api'
 async function DemoPage({children}) {
 
 	const payload = await getToDoItems()
-	const tasks = Object.entries(payload.todos)
+	const tasks = Object.entries(payload.todos).reverse()
 
 	return (
 		<>

@@ -1,6 +1,6 @@
 import {cn} from '@/lib/utils/mergeCss'
 
-function ToDoListItem({children, className, uid}) {
+function ToDoListItem({children, className, uid, payload}) {
 	const {task, category} = payload
 	return (
 		<aside className={cn('odd:bg-neutral-50 even:bg-gray-100 flex justify-between   py-4 px-3 rounded', className)}>
