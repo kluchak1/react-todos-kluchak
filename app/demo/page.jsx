@@ -5,10 +5,7 @@ import {ToDoListItem} from '@/components/todos/ToDoListItem'
 import {getToDoItems} from '@/lib/firebase/api'
 
 async function DemoPage({children}) {
-	//  call our firebase data...
-	// RTDB SDK: Object.keys, Object.values, Object.entries  {task:{dfjlsdjfldf:{},dsfdasfsdf:{},:sdflldsfs{}}}
-	// JSON array methods map filter sort... [{},{},{}]
-	// Vendor   API/SDK to get the data and parse the data.
+
 	const payload = await getToDoItems()
 	const tasks = Object.entries(payload.todos)
 
