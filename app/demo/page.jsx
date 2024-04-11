@@ -17,7 +17,7 @@ async function DemoPage({children}) {
 			<main className=" max-w-md mx-auto  py-24">
 				<ToDoList className=" space-y-4 p-4 h-[478px] max-h-[478px] overflow-y-scroll shadow-sm rounded-md border border-neutral-200">
 					{tasks.map((task) => (
-						<ToDoListItem key={task[0]} />
+						<ToDoListItem key={task[0]} payload={task[1]} uid={task[0]}/>
 					))}
 				</ToDoList>
 				<AddTask />

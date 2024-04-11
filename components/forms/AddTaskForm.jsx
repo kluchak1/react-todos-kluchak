@@ -13,7 +13,7 @@ const initialState = {
 
 
 function AddTaskFrom({children, className}) {
-	// formAction is for server and client communication
+	
 	const [state, formAction] = useFormState(addAction, initialState)
 
 	if (state.message === 'success') {
