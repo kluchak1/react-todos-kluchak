@@ -1,5 +1,6 @@
 import {ToDoList} from '@/components/todos/ToDoList'
 import {AddTask} from '@/components/dialogs/AddTask'
+import { EditTask } from '@/components/dialogs/EditTask'
 import {ToDoListItem} from '@/components/todos/ToDoListItem'
 
 import {getToDoItems} from '@/lib/firebase/api'

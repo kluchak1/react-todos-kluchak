@@ -9,7 +9,8 @@ import {
 
 
 import {cn} from '@/lib/utils/mergeCss'
-import {EditTaskFrom} from '../forms/EditTaskFrom'
+
+import { EditTaskFrom } from '../forms/EditTaskForm'
 
 
 function EditTask({children, className, uid, payload}) {
@@ -21,7 +22,7 @@ function EditTask({children, className, uid, payload}) {
 			<DialogContent className="">
 				<DialogHeader>
 					<DialogTitle>Edit Task</DialogTitle>
-					<EditTaskFrom uid={uid} payload={payload} />
+					<EditTaskFrom uid={uid} payload={payload}/>
 				</DialogHeader>
 			</DialogContent>
 		</Dialog>

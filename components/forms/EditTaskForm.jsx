@@ -5,6 +5,7 @@ import {toast} from 'sonner'
 
 import {cn} from '@/lib/utils/mergeCss'
 import { editAction } from '@/actions/editTaskAction'
+
 import {FormControl, Input, Label} from '.'
 
 const initialState = {
@@ -14,7 +15,7 @@ const initialState = {
 
 function EditTaskFrom({children, className, uid, payload}) {
 	
-	const [state, formAction] = useFormState(addAction, initialState)
+	const [state, formAction] = useFormState(editAction, initialState)
 	const [category, setCategory] = useState(payload.category)
 	const [task, setTask] = useState(payload.task)
 
