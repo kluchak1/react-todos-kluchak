@@ -1,6 +1,6 @@
 import {cn} from '@/lib/utils/mergeCss'
 import { EditTask } from '../dialogs/EditTask'
-
+import { DeleteTask } from '../dialogs/DeleteTask'
 function ToDoListItem({children, className, uid, payload}) {
 	const {task, category} = payload
 	return (
@@ -10,7 +10,8 @@ function ToDoListItem({children, className, uid, payload}) {
 				<p className="text-sm text-neutral-600">{task}</p>
 			</div>
 			<div className="flex flex-col gap-y-1 text-[10px] items-center">
-				<button className="border border-neutral-500 text-neutral-600 px-2 py-0.5 rounded">Delete</button>
+				<DeleteTask uid={uid}  payload={payload}/>
+
 				<EditTask uid={uid}  payload={payload}/>
 			</div>
 		</aside>
